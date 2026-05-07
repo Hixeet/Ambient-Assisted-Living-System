@@ -10,7 +10,7 @@ import mediapipe as mp
 import os
 
 # Konfigurasi Default
-default_model_path = r"C:\Users\Lenovo\Documents\Skripsi\Percobaan Aplikasi implementasi - pose\augmentasi_pose_seq6_acc_98_.h5"
+default_model_path = r"input_your_model_path_here"
 model = tf.keras.models.load_model(default_model_path, compile=False)
 class_labels = ["Berdiri", "Berjalan", "Duduk", "Jatuh"]
 IMG_SIZE = (128, 128)
