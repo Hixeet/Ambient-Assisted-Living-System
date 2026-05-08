@@ -1,6 +1,6 @@
 # Ambient Assisted Living System
 
-This project is a thesis-based real-time Human Activity Recognition (HAR) system designed to support Ambient Assisted Living (AAL) environments through computer vision and deep learning techniques. The system detects and classifies human activities from live webcam input using MediaPipe Pose for skeletal landmark extraction and a TensorFlow/Keras sequence model for temporal activity recognition. The application processes video streams in real-time by extracting human body pose landmarks, generating custom skeletal visualizations, preprocessing pose regions, and feeding sequential frame data into a trained deep learning model. The system is capable of recognizing activities such as Standing, Walking, Sitting, and Falling, while maintaining activity logs and displaying predictions through an interactive desktop GUI built with Tkinter.
+This project is a thesis based real-time Human Activity Recognition (HAR) system designed to support Ambient Assisted Living (AAL) environments through computer vision and deep learning techniques. The system detects and classifies human activities from live webcam input using MediaPipe Pose for skeletal landmark extraction and a TensorFlow/Keras sequence model for temporal activity recognition. The application processes video streams in real-time by extracting human body pose landmarks, generating custom skeletal visualizations, preprocessing pose regions, and feeding sequential frame data into a trained deep learning model. The system is capable of recognizing activities such as Standing, Walking, Sitting, and Falling, while maintaining activity logs and displaying predictions through an interactive desktop GUI built with Tkinter.
 
 This project is intended to address the problems described in the study by Takase (2023), which analyzed 4,176 fall incident reports in healthcare facilities in Japan during the 2016–2020 period. The study showed that approximately 60.3% of fall incidents occurred inside patient rooms, while around 81.09% of victims were aged between 60 and 89 years old. About 93% of the fall incidents resulted in injuries, with 68.1% involving fractures, and 1.7% of the total incidents resulting in death. Most concerningly, 79.0% of fall incidents were unwitnessed by nurses. To improve robustness and interpretability, the system applies pose-based preprocessing rather than relying directly on RGB images, making it more resilient to lighting changes and background variations. The application also provides separate User Mode and Developer Mode, where the developer interface includes real-time skeletal visualization for debugging and analysis purposes.
 
@@ -206,6 +206,20 @@ Developer Mode:
 - Pillow
 
 --------------------------------------------------
+
+## Acknowledgments
+
+* This project was developed as a final thesis by **Alfa Noora Fithria** at Universitas Airlangga, Department of Robotics and Artificial Intelligence Engineering.
+* Special thanks to thesis supervisors and peers who contributed insight and support.
+
+---
+
+## Contact
+
+For questions or collaboration, please contact: \[[alfa271200@gmail.com](mailto:alfa271200@gmail.com)]
+
+---
+
 
 ## LICENSE
 
