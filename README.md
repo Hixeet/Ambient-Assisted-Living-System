@@ -41,22 +41,26 @@ To improve robustness and interpretability, the system applies pose-based prepro
 
 1. Clone the repository
 
-git clone https://github.com/yourusername/ambient-assisted-living-system.git
-cd ambient-assisted-living-system
-
+  ```bash
+  git clone https://github.com/Hixeet/ambient-assisted-living-system.git
+  cd ambient-assisted-living-system
+  ```
 2. Install dependencies
 
-pip install -r requirements.txt
+  ```bash
+  pip install -r requirements.txt
+  ```
 
 Example dependencies:
 
+```text
 opencv-python
 numpy
 tensorflow
 mediapipe
 pillow
 tk
-
+```
 --------------------------------------------------
 
 ## HOW IT WORKS
