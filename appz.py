@@ -10,7 +10,7 @@ import mediapipe as mp
 import os
 
 # Konfigurasi Default
-default_model_path = r"input_your_model_path_here"
+default_model_path = "augmentasi_zigzag_seq6_acc_98.75_.h5"
 model = tf.keras.models.load_model(default_model_path, compile=False)
 class_labels = ["Berdiri", "Berjalan", "Duduk", "Jatuh"]
 IMG_SIZE = (128, 128)
