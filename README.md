@@ -63,73 +63,62 @@ tk
 ```
 --------------------------------------------------
 
-## HOW IT WORKS
+## How It Works
 
-1. Video Input
+1. **Video Input**:
+   The system captures live video frames from a webcam using OpenCV.
 
-The system captures live video frames from a webcam using OpenCV.
+2. **Pose Estimation**:
+   Each frame is processed using MediaPipe Pose to detect 33 human body landmarks.
 
-2. Pose Estimation
+3. **Skeleton Visualization**:
+   - Landmarks are grouped into body regions:
+     - Head
+     - Body
+     - Left Hand
+     - Right Hand
+     - Left Leg
+     - Right Leg
+   - Custom markers and colors are drawn for each body part.
 
-Each frame is processed using MediaPipe Pose to detect 33 human body landmarks.
+4. **Pose-Based Preprocessing**:
+   - The body region is automatically cropped using landmark coordinates.
+   - Cropped pose image is resized to 128x128.
+   - Pixel values are normalized into range 0-1.
 
-3. Skeleton Visualization
+5. **Temporal Sequence Buffer**:
+   - Processed frames are stored in a sequence buffer.
+   - The model uses 6 consecutive frames for activity prediction.
 
-- Landmarks are grouped into body regions:
-  - Head
-  - Body
-  - Left Hand
-  - Right Hand
-  - Left Leg
-  - Right Leg
+6. **Activity Classification**:
+   - Sequential pose data is fed into the TensorFlow model.
+   - The model predicts activity classes:
+     - Standing
+     - Walking
+     - Sitting
+     - Falling
 
-- Custom markers and colors are drawn for each body part.
+7. **Confidence Estimation**:
+   - Prediction confidence is calculated from softmax probabilities.
+   - Results are displayed in real-time.
 
-4. Pose-Based Preprocessing
+8. **Activity Logging**:
+   - Activity changes are automatically logged.
+   - Log includes:
+     - Activity label
+     - Start time
+     - Duration
 
-- The body region is automatically cropped using landmark coordinates
-- Cropped pose image is resized to 128x128
-- Pixel values are normalized into range 0-1
+9. **Developer Visualization**:
+   Developer Mode displays:
+   - Original webcam feed
+   - Skeleton-only visualization
+   - Real-time logs
 
-5. Temporal Sequence Buffer
-
-- Processed frames are stored in a sequence buffer
-- The model uses 6 consecutive frames for activity prediction
-
-6. Activity Classification
-
-- Sequential pose data is fed into the TensorFlow model
-- The model predicts activity classes:
-  - Standing
-  - Walking
-  - Sitting
-  - Falling
-
-7. Confidence Estimation
-
-- Prediction confidence is calculated from softmax probabilities
-- Results are displayed in real-time
-
-8. Activity Logging
-
-- Activity changes are automatically logged
-- Log includes:
-  - Activity label
-  - Start time
-  - Duration
-
-9. Developer Visualization
-
-Developer Mode displays:
-- Original webcam feed
-- Skeleton-only visualization
-- Real-time logs
-
-10. Result Display
-
-- GUI updates continuously using Tkinter
-- Falling events are highlighted in red
-- Activity history can be sorted and exported
+10. **Result Display**:
+   - GUI updates continuously using Tkinter.
+   - Falling events are highlighted in red.
+   - Activity history can be sorted and exported.
 
 --------------------------------------------------
 
