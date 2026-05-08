@@ -190,24 +190,13 @@ The activity recognition model uses a sequence-based deep learning approach trai
 - The sequence model requires several consecutive frames before prediction starts
 - GPU acceleration can improve TensorFlow inference speed
 - The application currently runs prediction in the main GUI thread and may benefit from threading optimization
-
---------------------------------------------------
-
-## FUTURE IMPROVEMENTS
-
-- Add alarm/notification system for fall detection
-- Integrate database logging
-- Add support for video file input
-- Optimize inference speed using threading or multiprocessing
-- Add FPS monitoring
-- Improve activity recognition with LSTM/Transformer architectures
-- Add elderly behavior analytics for smart healthcare applications
+- The system is designed as a surveillance system using a camera installed at the center of the room ceiling, and the model is trained using the same type of data (An example of this setup can be seen in the demo video)
 
 --------------------------------------------------
 
 ## TECHNOLOGIES USED
 
-- Python
+- Python 3.10
 - OpenCV
 - MediaPipe
 - TensorFlow / Keras
@@ -222,14 +211,9 @@ The activity recognition model uses a sequence-based deep learning approach trai
 * This project was developed as a final thesis by **Muhammad Ilham** at Universitas Airlangga, Department of Robotics and Artificial Intelligence Engineering.
 * Special thanks to thesis supervisors and peers who contributed insight and support.
 
----
+-----------------
 
 ## Contact
 
 For questions or collaboration, please contact: \[[muhammadilham121102@gmail.com](mailto:muhammadilham121102@gmail.com)]
 
----
-
-## LICENSE
-
-This project is intended for research and educational purposes.
