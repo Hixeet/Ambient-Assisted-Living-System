@@ -41,15 +41,15 @@ To improve robustness and interpretability, the system applies pose-based prepro
 
 1. Clone the repository
 
-    ```bash
-    git clone https://github.com/Hixeet/ambient-assisted-living-system.git
-    cd ambient-assisted-living-system
-    ```
+  ```bash
+  git clone https://github.com/Hixeet/ambient-assisted-living-system.git
+  cd ambient-assisted-living-system
+  ```
 2. Install dependencies
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+  ```bash
+  pip install -r requirements.txt
+  ```
 
 Example dependencies:
 
