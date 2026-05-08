@@ -15,6 +15,11 @@ https://pmc.ncbi.nlm.nih.gov/articles/PMC9969063/
 
 ## DEMO
 
+https://github.com/user-attachments/assets/45ff3fab-328a-4d34-9635-db9ead501659
+
+
+Full Video: https://drive.google.com/file/d/1QflGH1Ad8S_-VXyuuzZUckOjYsAyjDOo/view?usp=drive_link
+
 --------------------------------------------------
 
 ## FEATURES
@@ -128,41 +133,46 @@ tk
 --------------------------------------------------
 
 ## PROJECT STRUCTURE
-
+```
 project/
 │
 ├── appz.py
 ├── augmentasi_zigzag_seq6_acc_98.75_.h5
 ├── requirements.txt
 └── README.md
-
+```
 --------------------------------------------------
 
 ## MODEL INFORMATION
 
 The activity recognition model uses a sequence-based deep learning approach trained on skeletal pose data.
 
-Input:
+**Input**:
 - Sequence Length: 6 frames
 - Image Size: 128x128
 
-Output Classes:
+**Output Classes**:
 - 0 = Standing
 - 1 = Walking
 - 2 = Sitting
 - 3 = Falling
 
+**Training Result**:
+
+<img width="1189" height="390" alt="acc dan loss" src="https://github.com/user-attachments/assets/94253a02-d9de-45da-890f-d374bb00d240" />
+
+
 --------------------------------------------------
 
 ## GUI MODES
 
-User Mode:
+**User Mode**:
 - Live webcam feed
 - Activity prediction
 - Timestamp
 - Activity history log
 
-Developer Mode:
+**Developer Mode**:
 - Live webcam feed
 - Real-time skeleton visualization
 - Activity prediction
@@ -209,17 +219,16 @@ Developer Mode:
 
 ## Acknowledgments
 
-* This project was developed as a final thesis by **Alfa Noora Fithria** at Universitas Airlangga, Department of Robotics and Artificial Intelligence Engineering.
+* This project was developed as a final thesis by **Muhammad Ilham** at Universitas Airlangga, Department of Robotics and Artificial Intelligence Engineering.
 * Special thanks to thesis supervisors and peers who contributed insight and support.
 
 ---
 
 ## Contact
 
-For questions or collaboration, please contact: \[[alfa271200@gmail.com](mailto:alfa271200@gmail.com)]
+For questions or collaboration, please contact: \[[muhammadilham121102@gmail.com](mailto:muhammadilham121102@gmail.com)]
 
 ---
-
 
 ## LICENSE
 
